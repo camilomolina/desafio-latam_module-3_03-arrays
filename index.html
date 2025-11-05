@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Desafio Latam - Intro JS</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Inmobiliaria ADL</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="pages/sales.html?level=2">En venta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/rent.html?level=2">Alquiler</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container-fluid main-section">
+      <h1 class="text-white">Encuentra tu nueva propiedad</h1>
+    </main>
+    <div class="container mt-5">
+      <!-- Propiedades en venta -->
+      <section id="sales">
+        <h2>Propiedades en venta</h2>
+        <div id="summary-sales-cards" class="row"></div>
+        <a href="pages/sales.html?level=2" class="btn btn-dark"
+          >Ver todas las propiedades en venta</a
+        >
+      </section>
+      <hr />
+      <!-- Propiedades en alquiler -->
+      <section id="rents" class="mb-5">
+        <h2>Propiedades en alquiler</h2>
+        <div id="summary-rent-cards" class="row"></div>
+        <a href="pages/rent.html?level=2" class="btn btn-dark"
+          >Ver todas las propiedades en alquiler</a
+        >
+      </section>
+    </div>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/object.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
